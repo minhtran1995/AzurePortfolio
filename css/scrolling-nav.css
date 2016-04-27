@@ -155,9 +155,16 @@ of those sections to manage the look and feel of the site. */
     background-image: url('../img/buffer4.jpg');
 }
 .items{
-    background-color: black;
+     background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #00131a, #004d66); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #00131a, #004d66); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #00131a, #004d66); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #00131a, #004d66); /* Standard syntax */
+    
+    
     border-radius:20px;
-    opacity: 0.9;
+    opacity: 0.8;
     margin:10px;
+    padding:10px;
 }
 
